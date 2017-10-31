@@ -78,9 +78,6 @@
     <ClCompile Include="CppUTest\Utest.cpp">
       <Filter>Source Files\CppUTest</Filter>
     </ClCompile>
-    <ClCompile Include="tests.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="projeto.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -89,6 +86,9 @@
     </ClCompile>
     <ClCompile Include="CppUTest\UtestPlatform.cpp">
       <Filter>Source Files\CppUTest</Filter>
+    </ClCompile>
+    <ClCompile Include="tests_resolveEq2Grau.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
