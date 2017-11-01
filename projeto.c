@@ -53,3 +53,15 @@ int strcmp3(const char* str1, const char* str2)
 	// Digite aqui o seu codigo do exercicio 5(d) usando ponteiros
 	return 0;
 }
+
+char* strcpy2(char* dst, const char* src)
+{
+	// Digite aqui o seu codigo do exercicio 5(e) usando ponteiros
+	return NULL;
+}
+
+char* strcpy3(char* dst, const char* src)
+{
+	// Digite aqui o seu codigo do exercicio 5(e) usando vetores
+	return NULL;
+}
