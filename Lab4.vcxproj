@@ -226,6 +226,8 @@
     <ClCompile Include="tests_strcpy3.cpp" />
     <ClCompile Include="tests_strlen2.cpp" />
     <ClCompile Include="tests_strlen3.cpp" />
+    <ClCompile Include="tests_strncat2.cpp" />
+    <ClCompile Include="tests_strncat3.cpp" />
     <ClCompile Include="tests_strstr2.cpp" />
     <ClCompile Include="tests_strstr3.cpp" />
   </ItemGroup>
