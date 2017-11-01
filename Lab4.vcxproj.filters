@@ -22,6 +22,9 @@
     <Filter Include="Source Files\Tests">
       <UniqueIdentifier>{3f3f68a1-8345-4db8-97e7-6d654ab43f47}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Tests">
+      <UniqueIdentifier>{98d63e52-aa99-47cc-a101-bd812f043dc0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -123,6 +126,15 @@
     <ClCompile Include="tests_strcpy3.cpp">
       <Filter>Source Files\Tests</Filter>
     </ClCompile>
+    <ClCompile Include="tests_strcat2.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="auxTestFunctions.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="tests_strcat3.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CppUTest\CommandLineArguments.h">
@@ -205,6 +217,9 @@
     </ClInclude>
     <ClInclude Include="CppUTest\UtestMacros.h">
       <Filter>Header Files\CppUTest</Filter>
+    </ClInclude>
+    <ClInclude Include="auxTestFunctions.h">
+      <Filter>Header Files\Tests</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

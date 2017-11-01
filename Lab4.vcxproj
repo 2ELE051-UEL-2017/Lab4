@@ -149,6 +149,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="auxTestFunctions.cpp" />
     <ClCompile Include="CppUTest\CommandLineArguments.cpp">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
     </ClCompile>
@@ -215,6 +216,8 @@
     <ClCompile Include="tests_resolveEq2Grau.cpp">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
     </ClCompile>
+    <ClCompile Include="tests_strcat2.cpp" />
+    <ClCompile Include="tests_strcat3.cpp" />
     <ClCompile Include="tests_strchr2.cpp" />
     <ClCompile Include="tests_strchr3.cpp" />
     <ClCompile Include="tests_strcmp2.cpp" />
@@ -227,6 +230,7 @@
     <ClCompile Include="tests_strstr3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="auxTestFunctions.h" />
     <ClInclude Include="CppUTest\CommandLineArguments.h">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
     </ClInclude>

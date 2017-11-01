@@ -65,3 +65,15 @@ char* strcpy3(char* dst, const char* src)
 	// Digite aqui o seu codigo do exercicio 5(e) usando vetores
 	return NULL;
 }
+
+char* strcat2(char* dst, const char* src)
+{
+	// Digite aqui o seu codigo do exercicio 5(f) usando vetores
+	return NULL;
+}
+
+char* strcat3(char* dst, const char* src)
+{
+	// Digite aqui o seu codigo do exercicio 5(f) usando ponteiros
+	return NULL;
+}
