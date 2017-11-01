@@ -217,6 +217,8 @@
     </ClCompile>
     <ClCompile Include="tests_strchr2.cpp" />
     <ClCompile Include="tests_strchr3.cpp" />
+    <ClCompile Include="tests_strcmp2.cpp" />
+    <ClCompile Include="tests_strcmp3.cpp" />
     <ClCompile Include="tests_strlen2.cpp" />
     <ClCompile Include="tests_strlen3.cpp" />
     <ClCompile Include="tests_strstr2.cpp" />

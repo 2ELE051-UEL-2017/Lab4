@@ -41,3 +41,15 @@ const char* strstr3(const char* str1, const char* str2)
 	// Digite aqui o seu codigo do exercicio 5(c) usando vetores
 	return NULL;
 }
+
+int strcmp2(const char* str1, const char* str2)
+{
+	// Digite aqui o seu codigo do exercicio 5(d) usando ponteiros
+	return 0;
+}
+
+int strcmp3(const char* str1, const char* str2)
+{
+	// Digite aqui o seu codigo do exercicio 5(d) usando ponteiros
+	return 0;
+}
