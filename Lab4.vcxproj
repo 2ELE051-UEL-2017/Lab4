@@ -219,6 +219,8 @@
     <ClCompile Include="tests_strchr3.cpp" />
     <ClCompile Include="tests_strlen2.cpp" />
     <ClCompile Include="tests_strlen3.cpp" />
+    <ClCompile Include="tests_strstr2.cpp" />
+    <ClCompile Include="tests_strstr3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CppUTest\CommandLineArguments.h">

@@ -29,3 +29,15 @@ const char* strchr3(const char* str, int chr)
 	// Digite aqui o seu codigo do exercicio 5(b) usando vetores
 	return NULL;
 }
+
+const char* strstr2(const char* str1, const char* str2)
+{
+	// Digite aqui o seu codigo do exercicio 5(c) usando ponteiros
+	return NULL;
+}
+
+const char* strstr3(const char* str1, const char* str2)
+{
+	// Digite aqui o seu codigo do exercicio 5(c) usando vetores
+	return NULL;
+}
