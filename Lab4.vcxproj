@@ -215,6 +215,8 @@
     <ClCompile Include="tests_resolveEq2Grau.cpp">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
     </ClCompile>
+    <ClCompile Include="tests_strchr2.cpp" />
+    <ClCompile Include="tests_strchr3.cpp" />
     <ClCompile Include="tests_strlen2.cpp" />
     <ClCompile Include="tests_strlen3.cpp" />
   </ItemGroup>

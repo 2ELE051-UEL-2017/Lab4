@@ -8,12 +8,24 @@ int resolveEq2Grau(double a, double b, double c, double* x1, double* x2)
 
 size_t strlen2(const char* str)
 {
-	// Digite aqui o seu codigo do exercicio 5(a) com ponteiros
+	// Digite aqui o seu codigo do exercicio 5(a) usando ponteiros
 	return 0;
 }
 
 size_t strlen3(const char* str)
 {
-	// Digite aqui o seu codigo do exercicio 5(a) com vetores
+	// Digite aqui o seu codigo do exercicio 5(a) usando vetores
 	return 0;
+}
+
+const char* strchr2(const char* str, int chr)
+{
+	// Digite aqui o seu codigo do exercicio 5(b) usando ponteiros
+	return NULL;
+}
+
+const char* strchr3(const char* str, int chr)
+{
+	// Digite aqui o seu codigo do exercicio 5(b) usando vetores
+	return NULL;
 }

@@ -11,25 +11,25 @@ TEST_GROUP(strlen2)
 
 TEST(strlen2, StringVazia)
 {
-	LONGS_EQUAL(strlen2(""), strlen(""));
+	LONGS_EQUAL(strlen(""), strlen2(""));
 }
 
 TEST(strlen2, StringUmCaractere)
 {
-	LONGS_EQUAL(strlen2("a"), strlen("a"))
+	LONGS_EQUAL(strlen("a"), strlen2("a"))
 }
 
 TEST(strlen2, StringDoisCaracteres)
 {
-	LONGS_EQUAL(strlen2("ab"), strlen("ab"))
+	LONGS_EQUAL(strlen("ab"), strlen2("ab"))
 }
 
 TEST(strlen2, StringCincoCaracteres)
 {
-	LONGS_EQUAL(strlen2("abcd "), strlen("abcd "))
+	LONGS_EQUAL(strlen("abcd "), strlen2("abcd "))
 }
 
 TEST(strlen2, StringDezCaracteres)
 {
-	LONGS_EQUAL(strlen2("abcdefghi\n"), strlen("abcdefghi\n"))
+	LONGS_EQUAL(strlen("abcdefghi\n"), strlen2("abcdefghi\n"))
 }
