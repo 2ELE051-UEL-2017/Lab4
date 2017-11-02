@@ -26,3 +26,11 @@ void testStrncat(const char* expected, char* str1, const char *str2, size_t num,
 
 	STRCMP_EQUAL(expected, str1);
 }
+
+void testMemcmp(const void* ptr1, const void* ptr2, size_t num, int(*myMemcmp)(const void*, const void*, size_t))
+{
+	int memcmpResult = memcmp(ptr1, ptr2, num);
+	int myMemcmpResult = myMemcmp(ptr1, ptr2, num);
+
+	CHECK((memcmpResult == 0 && myMemcmpResult == 0) || (memcmpResult > 0 && myMemcmpResult > 0) || (memcmpResult < 0 && myMemcmpResult < 0));
+}

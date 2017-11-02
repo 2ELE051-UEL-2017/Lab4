@@ -89,3 +89,15 @@ char* strncat3(char* dst, const char* src, size_t num)
 	// Digite aqui o seu codigo do exercicio 5(g) usando ponteiros
 	return NULL;
 }
+
+int memcmp2(const void* ptr1, const void* ptr2, size_t num)
+{
+	// Digite aqui o seu codigo do exercicio 6(a) usando ponteiros
+	return 0;
+}
+
+int memcmp3(const void* ptr1, const void* ptr2, size_t num)
+{
+	// Digite aqui o seu codigo do exercicio 6(a) usando vetores
+	return 0;
+}
