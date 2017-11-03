@@ -215,6 +215,8 @@
     </ClCompile>
     <ClCompile Include="tests_memcmp2.cpp" />
     <ClCompile Include="tests_memcmp3.cpp" />
+    <ClCompile Include="tests_memcpy2.cpp" />
+    <ClCompile Include="tests_memcpy3.cpp" />
     <ClCompile Include="tests_resolveEq2Grau.cpp">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
     </ClCompile>

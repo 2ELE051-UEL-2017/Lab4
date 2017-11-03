@@ -34,3 +34,15 @@ void testMemcmp(const void* ptr1, const void* ptr2, size_t num, int(*myMemcmp)(c
 
 	CHECK((memcmpResult == 0 && myMemcmpResult == 0) || (memcmpResult > 0 && myMemcmpResult > 0) || (memcmpResult < 0 && myMemcmpResult < 0));
 }
+
+void testMemcpyApenasRetorno(void* ptr1, const void* ptr2, size_t num, void*(*myMemcpy)(void*, const void*, size_t))
+{
+	POINTERS_EQUAL(ptr1, myMemcpy(ptr1, ptr2, num));
+}
+
+void testMemcpyCompleto(void* ptr1, const void* ptr2, size_t num, void*(*myMemcpy)(void*, const void*, size_t))
+{
+	testMemcpyApenasRetorno(ptr1, ptr2, num, myMemcpy);
+
+	MEMCMP_EQUAL(ptr1, ptr2, num);
+}

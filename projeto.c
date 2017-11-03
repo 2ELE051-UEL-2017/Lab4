@@ -101,3 +101,15 @@ int memcmp3(const void* ptr1, const void* ptr2, size_t num)
 	// Digite aqui o seu codigo do exercicio 6(a) usando vetores
 	return 0;
 }
+
+void* memcpy2(void* dst, const void* src, size_t num)
+{
+	// Digite aqui o seu codigo do exercicio 6(b) usando ponteiros
+	return NULL;
+}
+
+void* memcpy3(void* dst, const void* src, size_t num)
+{
+	// Digite aqui o seu codigo do exercicio 6(b) usando vetores
+	return NULL;
+}
