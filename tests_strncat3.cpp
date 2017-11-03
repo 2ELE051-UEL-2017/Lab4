@@ -64,6 +64,16 @@ TEST(strncat3, StringUmCaractereComStringUmCaractereNum1)
 	testStrncat(expected, str1, str2, 1, strncat3);
 }
 
+TEST(strncat3, StringUmCaractereComStringUmCaractereNum1NaoUltrapassaFimDaString)
+{
+	const char expected[] = "aa";
+	char str1[] = { 'a', '\0', 0x13, 0x37 };
+	const char str2[] = { 'a', '\0', 'b' };
+
+	testStrncat(expected, str1, str2, 1, strncat3);
+	BYTES_EQUAL(0x37, str1[3]);
+}
+
 TEST(strncat3, StringUmCaractereComStringUmCaractereNum0)
 {
 	const char expected[] = "a";
@@ -82,7 +92,6 @@ TEST(strncat3, StringCincoCaracteresComStringVaziaNum0)
 	testStrncat(expected, str1, str2, 0, strncat3);
 }
 
-
 TEST(strncat3, StringVaziaComStringCincoCaracteresNum5)
 {
 	const char expected[] = "abcde";
@@ -99,6 +108,16 @@ TEST(strncat3, StringVaziaComStringCincoCaracteresNum3)
 	const char str2[] = "abcde";
 
 	testStrncat(expected, str1, str2, 3, strncat3);
+}
+
+TEST(strncat3, StringVaziaComStringCincoCaracteresNum3NaoUltrapassaFimDaString)
+{
+	const char expected[] = "abc";
+	char str1[] = { '\0', 0x01, 0x03, 0x03, 0x07 };
+	const char str2[] = "abcde";
+
+	testStrncat(expected, str1, str2, 3, strncat3);
+	BYTES_EQUAL(0x07, str1[4]);
 }
 
 TEST(strncat3, StringCincoCaracteresComStringQuatroCaracteresNum4)

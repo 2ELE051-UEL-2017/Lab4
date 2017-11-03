@@ -46,6 +46,16 @@ TEST(strcat3, StringUmCaractereComStringUmCaractere)
 	testStrcat(expected, str1, str2, strcat3);
 }
 
+TEST(strcat3, StringUmCaractereComStringUmCaractereNaoUltrapassaFimDaString)
+{
+	const char expected[] = "aa";
+	char str1[] = { 'a', '\0', 0x13, 0x37 };
+	const char str2[] = { 'a', '\0', 'b' };
+
+	testStrcat(expected, str1, str2, strcat3);
+	BYTES_EQUAL(0x37, str1[3]);
+}
+
 TEST(strcat3, StringCincoCaracteresComStringVazia)
 {
 	const char expected[] = "abcde";

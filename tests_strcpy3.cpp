@@ -34,6 +34,15 @@ TEST(strcpy3, StringUmCaractere)
 	testStrcpyCompleto(str, expected, strcpy3);
 }
 
+TEST(strcpy3, StringUmCaractereNaoUltrapassaFimDaString)
+{
+	const char expected[] = { 'a', '\0', 'b' };
+	char str[] = { 0x13, 0x37, 0x04 };
+
+	testStrcpyCompleto(str, expected, strcpy3);
+	BYTES_EQUAL(0x04, str[2]);
+}
+
 TEST(strcpy3, StringCincoCaracteres)
 {
 	const char expected[] = "abcde";
