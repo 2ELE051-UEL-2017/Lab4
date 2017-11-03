@@ -10,5 +10,7 @@ void testStrncat(const char* expected, char* str1, const char *str2, size_t num,
 void testMemcmp(const void* ptr1, const void* ptr2, size_t num, int(*myMemcmp)(const void*, const void*, size_t));
 void testMemcpyApenasRetorno(void* ptr1, const void* ptr2, size_t num, void*(*myMemcpy)(void*, const void*, size_t));
 void testMemcpyCompleto(void* ptr1, const void* ptr2, size_t num, void*(*myMemcpy)(void*, const void*, size_t));
+void testMemsetApenasRetorno(void* ptr, char value, size_t num, void*(*myMemset)(void* ptr, char value, size_t num));
+void testMemsetCompleto(void* ptr, char value, size_t num, void*(*myMemset)(void* ptr, char value, size_t num));
 
 #endif // AUX_TEST_FUNCTIONS_H

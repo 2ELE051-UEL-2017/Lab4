@@ -113,3 +113,15 @@ void* memcpy3(void* dst, const void* src, size_t num)
 	// Digite aqui o seu codigo do exercicio 6(b) usando vetores
 	return NULL;
 }
+
+void* memset2(void* ptr, char value, size_t num)
+{
+	// Digite aqui o seu codigo do exercicio 6(c) usando ponteiros
+	return NULL;
+}
+
+void* memset3(void* ptr, char value, size_t num)
+{
+	// Digite aqui o seu codigo do exercicio 6(c) usando vetores
+	return NULL;
+}

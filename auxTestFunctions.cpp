@@ -46,3 +46,19 @@ void testMemcpyCompleto(void* ptr1, const void* ptr2, size_t num, void*(*myMemcp
 
 	MEMCMP_EQUAL(ptr1, ptr2, num);
 }
+
+void testMemsetApenasRetorno(void* ptr, char value, size_t num, void*(*myMemset)(void* ptr, char value, size_t num))
+{
+	POINTERS_EQUAL(ptr, myMemset(ptr, value, num));
+}
+
+void testMemsetCompleto(void* ptr, char value, size_t num, void*(*myMemset)(void* ptr, char value, size_t num))
+{
+	size_t i;
+	char* p = (char*)ptr;
+
+	testMemsetApenasRetorno(ptr, value, num, myMemset);
+
+	for (i = 0; i < num; i++)
+		BYTES_EQUAL(value, p[i]);
+}
